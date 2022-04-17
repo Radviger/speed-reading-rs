@@ -1,0 +1,18 @@
+[package]
+name = "speed_reader"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wasm-bindgen = "0.2.80"
+stdweb = "0.4.20"
+
+[dependencies.notan]
+version = "0.2.1"
+features = ["drop_files"]
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+path = "src/main.rs"
