@@ -1,1 +1,1 @@
-cargo run --release --target-dir=win64
+cargo build --release --target-dir=win64
