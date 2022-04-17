@@ -31,6 +31,7 @@ fn main() -> Result<(), String> {
     notan::init_with(setup)
         .add_loader(create_text_loader())
         .add_config(DrawConfig)
+        .add_config(WindowConfig::new().title("SpeedReading"))
         .add_config(notan::log::LogConfig::new(notan::log::LevelFilter::Debug))
         .draw(draw)
         .event(event)
